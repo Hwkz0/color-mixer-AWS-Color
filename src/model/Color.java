@@ -1,32 +1,12 @@
 package model;
 
-import java.awt.Color;
-
-import color_service.ColorReader;
-
 public class Color {
 
-    int redValue, int greenValue, int blueValue
 
-    // Create a new color object
+    //to be modified so that the setup steps are more clear
 
-    public Color(int redValue, int greenValue, int blueValue) {
-        this.redValue = redValue;
-        this.greenValue = greenValue;
-        this.blueValue = blueValue;
+    public static void colorSetUp(){
+        storage.ColorArray.storeColorArray();
     }
-
-    // Read the red, green, and blue values
-
-    redValue= readColorValue("red");
-
-    greenValue = readColorValue("green");
-
-    blueValue = readColorValue("blue");
-
-    // Create a new color object
-
-    Color color = new Color(redValue, greenValue, blueValue);
-
 
 }
