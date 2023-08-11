@@ -15,6 +15,16 @@ public class ColorReader {
 
         readColorValue = colorScanner.nextInt();
 
+        while (!ColorVerifier.verifyColorValue(readColorValue)) {
+
+            System.out.println("Invalid " + colorName + " value. Please enter a value between 0 and 255.");
+
+            System.out.print("Enter " + colorName + " value: ");
+
+            readColorValue = colorScanner.nextInt();
+
+        }
+
         return readColorValue;
 
     }

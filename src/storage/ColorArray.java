@@ -1,11 +1,11 @@
 package storage;
 
+import java.awt.*;
+
 public class ColorArray {
+//
+//    Color[] colorArray= new Color[];
 
-    ColorArray[] colorArray = new ColorArray[10];
-
-    for (int i = 0; i < colorArray.length; i++) {
-    }
 
 
 }
