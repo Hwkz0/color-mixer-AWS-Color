@@ -1,18 +1,17 @@
 package storage;
 
-import static userinterface.ColorSelector.selectColor;
+import java.awt.*;
 
 public class ColorArrayAccessor {
 
-    public static int[] getColorFromArray() {
+    public static Color getColorFromArray(int accessColorArrayPosition, Color[] accessColorFromArray ) {
 
-        int retrievedColor = selectColor();
+        //returns the color the user asks for
 
-        //to be implemented
+        return accessColorFromArray[accessColorArrayPosition];
 
 
-
-        return storage.ColorArray.getColorArray(retrievedColor);
+//        return ColorArrayCreator.getColorArray(retrievedColor);
 
     }
 }

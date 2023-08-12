@@ -12,7 +12,7 @@ public class ColorPaletteSize {
 
         int colorPaletteSize;
 
-        System.out.print("How many colors do you want to store: ");
+        System.out.print("How many colors do you plan to work with : ");
 
         colorPaletteSize = colorPaletteSizeScanner.nextInt();
 

@@ -14,6 +14,7 @@ public class Main {
         frame.setSize(500, 500);
 
         // Set the background color of the frame the color object
+        //to be implemented back after color model is finished
 
         // Make the frame visible
 
