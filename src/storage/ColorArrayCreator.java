@@ -13,13 +13,6 @@ public class ColorArrayCreator {
 
         return colorArray;
 
-
-//
-//        //tests to see if the colors were stored in the array correctly
-//        for (int i= 0; i < colorArraySize; i++) {
-//            System.out.println("Color"+(i+1)+":"+colorArray[i]);
-//        }
-//
     }
 
 }
