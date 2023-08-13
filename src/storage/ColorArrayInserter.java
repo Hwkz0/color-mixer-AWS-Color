@@ -8,18 +8,12 @@ public class ColorArrayInserter {
 
     public static Color[] insertColorIntoArray(int insertColorIntoArrayQuantity, Color[] insertColorArray) {
 
+        //for loop to insert user specified number of colors
         for (int i = 0; i < insertColorIntoArrayQuantity; i++) {
             insertColorArray[i] = ColorCreator.createColor();
         }
 
         return insertColorArray;
-
-//
-//        creates as many colors as the user entered and stores them in the array
-//        for(int i= 0; i < colorArraySize; i++) {
-//            colorArray[i]= ColorCreator.createColor();
-//        }
-//
 
     }
 }
