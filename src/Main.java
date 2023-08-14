@@ -1,12 +1,14 @@
+import model.ColorCombine;
+
 import java.awt.*;
 
-import static model.Color.colorSetUp;
+import static model.ColorSetUp.colorSetUp;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        colorSetUp();
+        Color[] mainArray = colorSetUp();
 
         // Create a new frame
 
@@ -14,7 +16,9 @@ public class Main {
         frame.setSize(500, 500);
 
         // Set the background color of the frame the color object
-        //to be implemented back after color model is finished
+
+        Color color = ColorCombine.combineColor(mainArray);
+        frame.setBackground(color);
 
         // Make the frame visible
 

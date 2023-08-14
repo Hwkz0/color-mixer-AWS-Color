@@ -1,6 +1,6 @@
 package userinterface;
 
-import color_service.ColorVerifier;
+import color_service.ColorValueVerifier;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class ColorReader {
 
         readColorValue = colorScanner.nextInt();
 
-        return ColorVerifier.verifyColorValue(colorName, readColorValue);
+        return ColorValueVerifier.verifyColorValue(colorName, readColorValue);
 
     }
 

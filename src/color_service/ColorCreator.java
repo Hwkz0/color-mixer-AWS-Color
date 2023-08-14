@@ -10,8 +10,8 @@ public class ColorCreator {
 
         //creates a color object with the values the user entered
         Color createColor = new Color(ColorReader.readColorValue("red"),
-                                ColorReader.readColorValue("green"),
-                                ColorReader.readColorValue("blue"));
+                                    ColorReader.readColorValue("green"),
+                                    ColorReader.readColorValue("blue"));
 
         return createColor;
 

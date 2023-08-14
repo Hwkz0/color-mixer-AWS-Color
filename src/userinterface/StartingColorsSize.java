@@ -2,7 +2,7 @@ package userinterface;
 
 import java.util.Scanner;
 
-import static color_service.ColorVerifier.verifyColorPaletteSize;
+import static color_service.ColorPaletteVerifier.verifyColorPaletteSize;
 
 public class StartingColorsSize {
 
