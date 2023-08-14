@@ -19,8 +19,8 @@ public class ColorCombine {
 
     public static Color combineColor(Color[] combineColorArray) {
 
-        int firstColorPosition = ColorSelector.selectColor()+1;
-        int secondColorPosition = ColorSelector.selectColor()+1;
+        int firstColorPosition = ColorSelector.selectColor()-1;
+        int secondColorPosition = ColorSelector.selectColor()-1;
 
         Color firstColor = combineColorArray[firstColorPosition];
         Color secondColor = combineColorArray[secondColorPosition];

@@ -25,7 +25,7 @@ public class ColorPaletteSize {
 
         int colorPaletteSize;
 
-        System.out.print("What's the size of the color palette you plan to have : ");
+        System.out.print("What's the size of the color palette you plan to have? ");
 
         colorPaletteSize = colorPaletteSizeScanner.nextInt();
 

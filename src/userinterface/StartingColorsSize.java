@@ -23,7 +23,7 @@ public class StartingColorsSize {
 
         int startingColorSize;
 
-        System.out.print("How many colors do you plan to start with : ");
+        System.out.print("How many colors will you start with? ");
 
         startingColorSize = startingColorSizeScanner.nextInt();
 

@@ -38,8 +38,8 @@ public class ColorSetUp {
                 //selects in which array to store colors
                 colorSetUpArray);
 
-        //tests to see if the colors were stored in the array correctly
 
+        //tests to see if the colors were stored in the array correctly
         for (int i = 0; i < colorSetUpArraySize; i++) {
             System.out.println("Position "+ (i+1) +" "+(colorSetUpArray[i]));
         }
