@@ -4,6 +4,10 @@ import java.awt.*;
 
 import static model.ColorSetUp.colorSetUp;
 
+/**
+ * Main class to run the color combination application.
+ */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -33,6 +37,5 @@ public class Main {
         });
 
     }
-
 
 }

@@ -4,7 +4,18 @@ import userinterface.ColorReader;
 
 import java.awt.*;
 
+/**
+ * Utility class for creating a Color object.
+ */
+
 public class ColorCreator {
+
+    /**
+     * createColor() creates a Color object with the RGB values the user entered.
+     *
+     * @return returns a Color object with the RGB values the user entered.
+     */
+
 
     public static Color createColor() {
 

@@ -3,9 +3,23 @@ package color_service;
 
 import java.util.Scanner;
 
+/**
+ * Utility class for verifying color values within the range of 0 to 255.
+ */
+
 public class ColorValueVerifier {
 
+
+    //Scanner for input
     static Scanner colorValueVerifierScanner = new Scanner(System.in);
+
+    /**
+     * Verifies that the provided color value is within the range of 0 to 255.
+     *
+     * @param verifyColorName The name of the color value being verified (e.g., "red", "green", "blue").
+     * @param verifyColorValue The color value to be verified.
+     * @return The verified color value within the range of 0 to 255.
+     */
 
     public static int verifyColorValue(String verifyColorName, int verifyColorValue) {
 

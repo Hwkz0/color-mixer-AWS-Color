@@ -1,16 +1,27 @@
-package storage;
+    package storage;
 
-import java.awt.*;
+    import java.awt.*;
 
-import static userinterface.ColorPaletteSize.colorPaletteSize;
+    import static userinterface.ColorPaletteSize.colorPaletteSize;
 
-public class ColorArrayCreator {
+    /**
+     * Utility class for creating arrays of colors.
+     */
 
-    public static Color[] createColorArray(int createdColorArraySize) {
+    public class ColorArrayCreator {
 
-        //creates an array of the size the user entered
+        /**
+         * Creates an array of colors with the specified size.
+         *
+         * @param createdColorArraySize The size of the array to be created.
+         * @return An array of colors with the specified size.
+         */
 
-        return new Color[createdColorArraySize];
+        public static Color[] createColorArray(int createdColorArraySize) {
+
+            //creates an array of the size the user entered
+
+            return new Color[createdColorArraySize];
+        }
+
     }
-
-}

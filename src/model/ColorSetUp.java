@@ -8,8 +8,18 @@ import static storage.ColorArrayInserter.insertColorIntoArray;
 import static userinterface.ColorPaletteSize.colorPaletteSize;
 import static userinterface.StartingColorsSize.startingColorSize;
 
+/**
+ * Utility class for setting up an array of colors.
+ */
+
 public class ColorSetUp {
     //to be modified so that the setup steps are more clear
+
+    /**
+     * Sets up an array of colors based on user input.
+     *
+     * @return An array of colors initialized according to user input.
+     */
 
     public static Color[] colorSetUp(){
 
@@ -22,7 +32,6 @@ public class ColorSetUp {
         Color[] colorSetUpArray = ColorArrayCreator.createColorArray(colorSetUpArraySize);
 
         //creates as many colors as the user entered and stores them in the array
-
         insertColorIntoArray(
                 //inserts as many colors the user specified
                 colorSetUpStartingColorSize,
@@ -32,7 +41,7 @@ public class ColorSetUp {
         //tests to see if the colors were stored in the array correctly
 
         for (int i = 0; i < colorSetUpArraySize; i++) {
-            System.out.println("Position "+ i +" "+(colorSetUpArray[i]));
+            System.out.println("Position "+ (i+1) +" "+(colorSetUpArray[i]));
         }
 
         return colorSetUpArray;
