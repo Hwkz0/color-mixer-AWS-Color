@@ -2,8 +2,9 @@ import model.ColorCombine;
 
 import java.awt.*;
 
+import static color_service.MixAgain.mixAgain;
 import static model.ColorSetUp.colorSetUp;
-import static storage.ColorArrayInserter.insertColorIntoArray;
+import static storage.ColorSaver.saveColor;
 import static userinterface.MixAgainPrompt.mixAgainPrompt;
 import static userinterface.StartProgramPrompt.startProgramPrompt;
 
@@ -35,12 +36,11 @@ public class Main {
         // Make the frame visible
         frame.setVisible(true);
 
-        if (mixAgainPrompt()) {
-            color = ColorCombine.combineColor(mainArray);
-            frame.setBackground(color);
-        } else {
-            System.exit(0);
-        }
+        saveColor(color, mainArray);
+
+        //mix again
+        mixAgain(mainArray, frame);
+
 
         //exit on close
         frame.addWindowListener(new java.awt.event.WindowAdapter() {

@@ -3,6 +3,7 @@ package userinterface;
 import java.util.Scanner;
 
 import static color_service.ColorPaletteVerifier.verifyColorPaletteSize;
+import static color_service.ReadValidInteger.readValidInteger;
 
 /**
  * Utility class for handling the size of starting colors.
@@ -25,7 +26,7 @@ public class StartingColorsSize {
 
         System.out.print("How many colors will you start with? ");
 
-        startingColorSize = startingColorSizeScanner.nextInt();
+        startingColorSize = readValidInteger();
 
         return verifyColorPaletteSize(startingColorSize);
 

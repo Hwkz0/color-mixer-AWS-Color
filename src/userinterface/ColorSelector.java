@@ -2,6 +2,8 @@ package userinterface;
 
 import java.util.Scanner;
 
+import static color_service.ReadValidInteger.readValidInteger;
+
 /**
  * Utility class for selecting colors.
  */
@@ -23,7 +25,7 @@ public class ColorSelector {
 
         System.out.print("Select a color: ");
 
-        selectedColor = colorSelectorScanner.nextInt();
+        selectedColor = readValidInteger();
 
         return selectedColor;
 

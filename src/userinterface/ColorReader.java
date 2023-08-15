@@ -4,6 +4,8 @@ import color_service.ColorValueVerifier;
 
 import java.util.Scanner;
 
+import static color_service.ReadValidInteger.readValidInteger;
+
 /**
  * Utility class for reading color values from the user.
  */
@@ -27,7 +29,7 @@ public class ColorReader {
 
         System.out.print("Enter " + colorName + " value: ");
 
-        readColorValue = colorScanner.nextInt();
+        readColorValue = readValidInteger();
 
         return ColorValueVerifier.verifyColorValue(colorName, readColorValue);
 

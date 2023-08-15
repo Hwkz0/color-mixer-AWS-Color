@@ -3,6 +3,7 @@ package userinterface;
 import java.util.Scanner;
 
 import static color_service.ColorPaletteVerifier.verifyColorPaletteSize;
+import static color_service.ReadValidInteger.readValidInteger;
 
 /**
  * Utility class for handling color palette size input.
@@ -27,7 +28,7 @@ public class ColorPaletteSize {
 
         System.out.print("What's the size of the color palette you plan to have? ");
 
-        colorPaletteSize = colorPaletteSizeScanner.nextInt();
+        colorPaletteSize = readValidInteger();
 
         return verifyColorPaletteSize(colorPaletteSize);
 

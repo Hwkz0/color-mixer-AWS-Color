@@ -25,6 +25,21 @@ public class ColorCombine {
         Color firstColor = combineColorArray[firstColorPosition];
         Color secondColor = combineColorArray[secondColorPosition];
 
+        if (firstColorPosition == secondColorPosition) {
+            System.out.println("You selected the same color twice. Please select two different colors.");
+            return combineColor(combineColorArray);
+        }
+
+        if (firstColorPosition > combineColorArray.length - 1 || secondColorPosition > combineColorArray.length - 1) {
+            System.out.println("You selected a color that does not exist. Please select two different colors.");
+            return combineColor(combineColorArray);
+        }
+
+        if (firstColor==null || secondColor==null) {
+            System.out.println("You selected a color that does not exist. Please select two different colors.");
+            return combineColor(combineColorArray);
+        }
+
         int red = (firstColor.getRed() + secondColor.getRed()) / 2;
         int green = (firstColor.getGreen() + secondColor.getGreen()) / 2;
         int blue = (firstColor.getBlue() + secondColor.getBlue()) / 2;
