@@ -2,10 +2,8 @@
 
     import java.awt.*;
 
-    import static userinterface.ColorPaletteSize.colorPaletteSize;
-
     /**
-     * Utility class for creating arrays of colors.
+     * Storage class for creating arrays of colors.
      */
 
     public class ColorArrayCreator {

@@ -1,6 +1,6 @@
 package color_service;
 
-import userinterface.ColorReader;
+import userinterface.interaction.ColorReader;
 
 import java.awt.*;
 
@@ -11,11 +11,10 @@ import java.awt.*;
 public class ColorCreator {
 
     /**
-     * createColor() creates a Color object with the RGB values the user entered.
+     * Creates a Color object with the RGB values the user entered.
      *
-     * @return returns a Color object with the RGB values the user entered.
+     * @return A Color object with the RGB values provided by the user.
      */
-
 
     public static Color createColor() {
 
@@ -24,6 +23,7 @@ public class ColorCreator {
                                     ColorReader.readColorValue("green"),
                                     ColorReader.readColorValue("blue"));
 
+        //returns the color object
         return createColor;
 
     }

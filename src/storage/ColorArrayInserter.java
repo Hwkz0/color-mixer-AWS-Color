@@ -5,7 +5,7 @@ import color_service.ColorCreator;
 import java.awt.*;
 
 /**
- * Utility class for inserting colors into an array.
+ * Storage class for inserting colors into an array.
  */
 
 public class ColorArrayInserter {
@@ -20,10 +20,12 @@ public class ColorArrayInserter {
 
     public static Color[] insertColorIntoArray(int insertColorIntoArrayQuantity, Color[] insertColorArray) {
 
+        //inserts the specified quantity of colors into the array
         for (int i = 0; i < insertColorIntoArrayQuantity; i++) {
             insertColorArray[i] = ColorCreator.createColor();
         }
 
+        //returns the array with inserted colors
         return insertColorArray;
 
     }

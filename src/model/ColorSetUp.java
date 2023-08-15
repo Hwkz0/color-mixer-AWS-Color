@@ -4,13 +4,13 @@ import storage.ColorArrayCreator;
 
 import java.awt.*;
 
-import static color_service.ColorPaletteShow.showColorPalette;
 import static storage.ColorArrayInserter.insertColorIntoArray;
-import static userinterface.ColorPaletteSize.colorPaletteSize;
-import static userinterface.StartingColorsSize.startingColorSize;
+import static userinterface.informative.ColorPaletteShow.showColorPalette;
+import static userinterface.interaction.ColorPaletteSize.colorPaletteSize;
+import static userinterface.interaction.StartingColorsSize.startingColorSize;
 
 /**
- * Utility class for setting up an array of colors.
+ * Model class for setting up an array of colors.
  */
 
 public class ColorSetUp {
@@ -26,6 +26,7 @@ public class ColorSetUp {
 
         //prompts user to enter the number of colors they want to store
         int colorSetUpArraySize = colorPaletteSize();
+        //prompts user to enter the number of colors they want to store
         int colorSetUpStartingColorSize = startingColorSize();
 
 
@@ -39,8 +40,10 @@ public class ColorSetUp {
                 //selects in which array to store colors
                 colorSetUpArray);
 
+        //shows the colors in the array
         showColorPalette(colorSetUpArray);
 
+        //returns the array of colors
         return colorSetUpArray;
 
         }
