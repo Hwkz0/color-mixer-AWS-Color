@@ -49,8 +49,7 @@ Do not commit if the program is not working anymore, your contributions should n
 
 ## License
 
-No license.
-
+This project is licensed under the MIT License 
 ## Contact
 
 You can contact me on eduardddrimus@gmail.com.
